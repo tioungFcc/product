@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    color: #555;
+}
+
+a, #submit{
+    color: inherit;
+    text-transform: uppercase;
+    transition: opacity 200ms ease-in-out;
+    cursor: pointer;
+}
+
+a:hover, #submit:hover{
+    opacity: 0.7;
+}
+
+input{
+    padding: 1em;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    height: 120px;
+    background-color: #eee;
+    opacity: 0.95;
+    z-index: 100;
+}
+
+.logo{
+    background: linear-gradient(to right, #eee, #dfdfdf, #eee);
+    padding: 0.45em 0.45em 0.45em 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ddd;
+}
+
+#nav-bar li{
+    margin-left: 3em;
+    font-size: 1rem;
+    font-weight: 500;
+    /* text-transform: uppercase;
+    transition: opacity 200ms ease-in-out; */
+}
+
+.main{
+    position: relative;
+    top: 120px;
+}
+
+.main2{
+    padding: 6em;
+    background-color: #ddd;
+    justify-content: center;
+}
+
+.feature{
+    background-color: #fafafa;
+    padding: 0 4em;
+    flex-direction: column;
+    box-shadow: 2px 2px 12px white;
+    border-radius: 5px;
+}
+
+.main2 h1, #form{
+    margin: 2rem;
+}
+
+.main2 h1{
+    text-transform: capitalize;
+    /* letter-spacing: 1px; */
+}
+
+#email{
+    border: 1px solid #ddd;
+}
+
+.info{
+    background-color: #eee;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.wrapper{
+    padding-top: 3em;
+    width: 70%;
+    /* background-color: red; */
+}
+
+.info h2{
+    text-transform: capitalize;
+    color: #eaeaea;
+    background-color: #777;
+    border-radius: 5px;
+    padding: 0.1em 0.3em;
+    display: inline-block;
+}
+
+.info h3{
+    /* font-size: 1.3rem; */
+    margin: 1.5em 0 0.3em;
+    /* color: red; */
+    text-transform: capitalize;
+    /* padding: 0em; */
+}
+
+.info ul li:first-child h3{
+    margin-top: 0.5em;
+}
+
+.info p{
+    font-size: 1rem;
+}
+
+@media (max-width:700px){
+    /* body{
+        color: red;
+    } */
+    #header{
+        height: 300px;
+    }
+    #header, #nav-bar ul{
+        flex-direction: column;
+    }
+    .feature #email{
+        margin: 1em 0;
+        text-transform: capitalize;
+    }
+    .feature #email, .feature #submit{
+        width: 100%;
+    }
+    #nav-bar li{
+        margin-top: 2em;
+    }
+    .main{
+        top:300px;
+    }
+    .main2{
+        padding: 2em;
+    }
+    .feature{
+        width: 90vw;
+    }
+    iframe{
+        width:80vw;
+        height: 45vw;
+    }
+}
