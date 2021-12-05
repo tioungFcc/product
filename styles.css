@@ -66,8 +66,6 @@ input:focus{
     margin-left: 3em;
     font-size: 1rem;
     font-weight: 500;
-    /* text-transform: uppercase;
-    transition: opacity 200ms ease-in-out; */
 }
 
 .main{
@@ -95,7 +93,6 @@ input:focus{
 
 .main2 h1{
     text-transform: capitalize;
-    /* letter-spacing: 1px; */
 }
 
 #email{
@@ -111,7 +108,6 @@ input:focus{
 .wrapper{
     padding-top: 3em;
     width: 70%;
-    /* background-color: red; */
 }
 
 .info h2{
@@ -124,11 +120,8 @@ input:focus{
 }
 
 .info h3{
-    /* font-size: 1.3rem; */
     margin: 1.5em 0 0.3em;
-    /* color: red; */
     text-transform: capitalize;
-    /* padding: 0em; */
 }
 
 .info ul li:first-child h3{
@@ -140,9 +133,6 @@ input:focus{
 }
 
 @media (max-width:700px){
-    /* body{
-        color: red;
-    } */
     #header{
         height: 300px;
     }
